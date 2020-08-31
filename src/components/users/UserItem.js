@@ -11,7 +11,7 @@ class UserItem extends Component {
                 <h3>{login}</h3>
 
                 <div>
-                    <a href={this.props.html_url} className="btn btn-dark btn-sm my-1">More</a>
+                    <a href={html_url} className="btn btn-dark btn-sm my-1">More</a>
                 </div>
             </div>
         )
