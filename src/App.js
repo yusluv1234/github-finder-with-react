@@ -38,7 +38,7 @@ class App extends Component {
       =${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);
 
     this.setState({ user: res.data, loading: false });
-  }
+  }; 
 
   // Clear users from state
   clearUsers = () => this.setState({ users: [], loading: false });
