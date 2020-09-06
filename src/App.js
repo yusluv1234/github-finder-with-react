@@ -40,6 +40,18 @@ class App extends Component {
     this.setState({ user: res.data, loading: false });
   }; 
 
+  // Get users repos
+  getuserRepos = async username => {
+      this.setState({ loading: true })
+
+  const res = await axios.get(
+    `https://api.github.com/search/users/${username}?client_id
+      =${process.env.REACT_APP_GITHUB_CLIENT_ID}/repos?per_page=5&sort=created:asc&client_secret
+      =${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);
+
+    this.setState({ user: res.data, loading: false });
+  }; 
+
   // Clear users from state
   clearUsers = () => this.setState({ users: [], loading: false });
 
