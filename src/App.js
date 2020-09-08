@@ -12,7 +12,7 @@ import About from './components/pages/About';
 class App extends Component {
   state = {
     users: [],
-    users: {},
+    user: {},
     repos: [],
     loading: false,
     alert: null  
