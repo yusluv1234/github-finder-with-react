@@ -65,6 +65,7 @@ const GithubState = (props) => {
         loading: state.loading,
         searchUsers,
         clearUsers,
+        getUser
       }}
     >
       {props.children}
