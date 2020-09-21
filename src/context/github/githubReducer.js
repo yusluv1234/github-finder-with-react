@@ -12,7 +12,7 @@ export default (state, action) => {
             return {
                 ...state,
                 users: [],
-                loading: false
+                loading: false 
             }
         case SET_LOADING:
             return {
