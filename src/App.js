@@ -33,8 +33,7 @@ const App = () => {
               render={(props) => (
                 <Fragment>
                   <Search
-                    setAlert={showAlert}
-                  />
+                    setAlert={showAlert} />
                   <Users />
                 </Fragment>
               )}
