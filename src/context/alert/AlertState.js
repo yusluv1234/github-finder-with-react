@@ -1,12 +1,12 @@
 import React, { useReducer } from "react";
 import AlertContext from "./alertContext";
-import alertReducer from "./alertReducer";
+import AlertReducer from "./alertReducer";
 import { SET_ALERT, REMOVE_ALERT } from "../types";
 
-const AlertState = (props) => {
+const AlertState = props => {
     const initialState = null;
 
-  const [state, dispatch] = useReducer(alertReducer, initialState);
+  const [state, dispatch] = useReducer(AlertReducer, initialState);
 
   // Set  Alert
     const setAlert = (msg, type) => {

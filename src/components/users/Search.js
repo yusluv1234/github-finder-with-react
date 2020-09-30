@@ -1,9 +1,9 @@
 import React, { useState, useContext } from 'react';
 import PropTypes from "prop-types";
 import GithubContext from "../../context/github/githubContext";
-import AAAlertContext from "../../context/alert/AlertState";
+import AlertContext from "../../context/alert/AlertState";
 
-const Search = ({ setAlert }) => {
+const Search = () => {
   const githubContext = useContext(GithubContext);
   const alertContext = useContext(AlertContext);
 
